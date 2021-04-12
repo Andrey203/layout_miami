@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body class="page">
-    <header class="header page__container">
+    <header id="home" class="header page__container">
       <div class="header__top-container">
         <div class="menu-icon"></div>
         <div class="logo">
@@ -28,22 +28,22 @@
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">Home</a>
+              <a href="#home" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">About us</a>
+              <a href="#about" class="nav__link">About us</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Gallery</a>
+              <a href="#gallery" class="nav__link">Gallery</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Consultation</a>
+              <a href="#contacts" class="nav__link">Consultation</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Testimonials</a>
+              <a href="#testimonials" class="nav__link">Testimonials</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contacts</a>
+              <a href="#contacts" class="nav__link">Contacts</a>
             </li>
           </ul>
           <div class="nav__phone">
@@ -62,7 +62,7 @@
       </div>
     </header>
     <main class="content page__container">
-      <section class="about content__section-padding-bottom">
+      <section id="about" class="about content__section-padding-bottom">
         <div class="about__title-wrapper">
           <h2 class="about__title">
             Miami best<br>Real estate <span class="about__title-last-word">here</span>
@@ -87,7 +87,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery content__section-padding-bottom">
+      <section id="gallery" class="gallery content__section-padding-bottom">
         <h2 class="gallery__title">Gallery</h2>
         <div class="gallery__img-wrapper">
           <div class="gallery__img-group-1">
@@ -132,7 +132,7 @@
         </div>
         <button class="gallery__more-button">View all</button>
       </section>
-      <section class="testimonials content__section-padding-bottom">
+      <section id="testimonials" class="testimonials content__section-padding-bottom">
         <h2 class="testimonials__title">Testimonials</h2>
         <div class="testimonials__cards-wrapper">
           <div class="testimonials__person-card">
@@ -185,7 +185,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts content__section-padding-bottom">
+      <section id="contacts" class="contacts content__section-padding-bottom">
         <h2 class="contacts__title">Contact us</h2>
         <div class="contacts__contact-wrapper">
           <div class="contacts__contact-block">
@@ -200,8 +200,8 @@
             <div class="contacts__address">
               <p class="contacts__contact-block-title">Address</p>
               <p class="contacts__contact-block-text">
-                400 first ave. n.<br>
-                suite 700<br>
+                400 first ave. n.
+                suite 700
                 Minneapolis, MN 55401
               </p>
             </div>
@@ -222,10 +222,7 @@
                 class="contacts__form-email contacts-input-style"
                 placeholder="Email"
               >
-              <textarea
-                class="contacts__form-message contacts-input-style"
-                placeholder="Message">
-              </textarea>
+              <textarea class="contacts__form-message contacts-input-style" placeholder="Message"></textarea>
               <input
                 type="submit"
                 class="contacts__form-btn"
@@ -236,7 +233,15 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img
+          src="images/logo.png"
+          class="footer__logo-img"
+          alt="Logo image"
+        >
+      </div>
+    </footer>
   </body>
   <script type="text/javascript" src="scripts/main.js"></script>
 </html>
