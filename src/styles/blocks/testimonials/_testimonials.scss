@@ -1,0 +1,15 @@
+.testimonials {
+  &__title {
+    @extend %h2-title;
+
+    @media (min-width: 600px) {
+      & {
+        margin-bottom: 61px;
+      }
+    }
+  
+    &::after {
+      @extend %crown;
+    }
+  }
+}
