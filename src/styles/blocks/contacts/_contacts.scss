@@ -26,7 +26,7 @@
     @media (min-width: 1070px) {
       & {
         justify-content: space-between;
-        grid-template-columns: repeat(auto-fill, 413px);
+        grid-template-columns: 413px 413px;
       }
     }
   }
