@@ -26,6 +26,10 @@
   @media (min-width: 600px) {
     @include size(80px, 136px);
   }
+
+  &__logo-img {
+    @include size(100%, 100%);
+  }
 }
 
 .menu-icon {
@@ -64,6 +68,10 @@
 @media (min-width: 600px) {
   .phone-wrapper {
     position: relative;
+
+    & > .phone-link:hover ~ ::before {
+      right: 0;
+    }
   }
 
   .phone-number {
@@ -97,10 +105,6 @@
   @media (min-width: 600px) {
     & {
       @include size(32px, 32px);
-    }
-
-    &:hover ~ ::before {
-      right: 0;
     }
   }
 }

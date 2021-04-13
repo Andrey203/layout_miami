@@ -18,6 +18,12 @@
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.01) translate(0, -12px);
+      box-shadow: 0 15px 30px #555;
+    }
   
     @media (min-width: 600px) {
       & {
@@ -75,7 +81,8 @@
     grid-column-start: 1;
     grid-column-end: 3;
 
-    & > span {
+    & > a {
+      text-decoration: none;
       color: #0075ff;
     }
 

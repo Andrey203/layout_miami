@@ -12,14 +12,18 @@
       <div class="header__top-container">
         <div class="menu-icon"></div>
         <div class="logo">
-          <img
-            src="images/logo.png"
-            alt="miami image"
-            class="logo"
-          >
+          <a href="#home" class="logo__link">
+            <img
+              src="images/logo.png"
+              alt="miami image"
+              class="logo__img"
+            >
+          </a>
         </div>
         <div class="phone-wrapper">
-          <div class="phone-icon"></div>
+          <a href="tel:+1 234 555-55-55" class="phone-link">
+            <div class="phone-icon"></div>
+          </a>
           <div class="phone-number"></div>
         </div>
       </div>
@@ -65,7 +69,7 @@
       <section id="about" class="about content__section-padding-bottom">
         <div class="about__title-wrapper">
           <h2 class="about__title">
-            Miami best<br>Real estate <span class="about__title-last-word">here</span>
+            Miami best<br>Real estate <a href="#" class="about__title-last-word">here</a>
           </h2>
         </div>
         <div class="about__description">
@@ -101,7 +105,11 @@
               alt="Mayami photo"
               class="gallery__photo"
             >
-            <p class="gallery__img-group-description"><span>Marina Palms</span> / North Miami Beach, FL 33162</p>
+            <p class="gallery__img-group-description">
+              <a href="https://www.google.com.ua/maps/search/Marina+Palms+%2F+North+Miami+Beach,+FL+33162/@25.9349769,-80.1526057,17z/data=!3m1!4b1?hl=ru">
+                Marina Palms
+              </a> / North Miami Beach, FL 33162
+            </p>
           </div>
           <div class="gallery__img-group-2">
             <img
@@ -114,7 +122,11 @@
               alt="Mayami photo"
               class="gallery__photo"
             >
-            <p class="gallery__img-group-description"><span>Edition Residens</span> / Miami Beach, FL 33139 </p>
+            <p class="gallery__img-group-description">
+              <a href="https://www.google.com.ua/maps/place/The+Edition+Residences/@25.8055818,-80.1267658,17z/data=!3m1!4b1!4m5!3m4!1s0x88d9b366cec00001:0x39b04020e8dc930c!8m2!3d25.8055818!4d-80.1245771?hl=ru">
+                Edition Residens
+              </a> / Miami Beach, FL 33139
+            </p>
           </div>
           <div class="gallery__img-group-3">
             <img
@@ -127,7 +139,11 @@
               alt="Mayami photo"
               class="gallery__photo"
             >
-            <p class="gallery__img-group-description"><span>Faena House</span> / Miami Beach, FL 33140</p>
+            <p class="gallery__img-group-description">
+              <a href="https://www.google.com.ua/maps/place/FAENA+HOUSE,+3315+Collins+Ave,+Miami+Beach,+FL+33140,+%D0%A1%D0%A8%D0%90/@25.8078488,-80.1254189,17z/data=!3m1!4b1!4m5!3m4!1s0x88d9b36700163965:0x7aa1c54f91d0b02d!8m2!3d25.8078488!4d-80.1232302?hl=ru">
+                Faena House
+              </a> / Miami Beach, FL 33140
+            </p>
           </div>
         </div>
         <button class="gallery__more-button">View all</button>
@@ -191,19 +207,34 @@
           <div class="contacts__contact-block">
             <div class="contacts__phone">
               <p class="contacts__contact-block-title">Phone</p>
-              <p class="contacts__contact-block-text">+1 234 5555-55-55</p>
+              <a
+                class="contacts__link"
+                href="tel:+1 234 5555-55-55"
+              >
+                <p class="contacts__contact-block-text">+1 234 5555-55-55</p>
+              </a>
             </div>
             <div class="contacts__email">
               <p class="contacts__contact-block-title">Email</p>
-              <p class="contacts__contact-block-text">hello@miami.com</p>
+              <a
+                href="mailto:hello@miami.com"
+                class="contacts__link"
+              >
+                <p class="contacts__contact-block-text">hello@miami.com</p>
+              </a>
             </div>
             <div class="contacts__address">
               <p class="contacts__contact-block-title">Address</p>
-              <p class="contacts__contact-block-text">
-                400 first ave. n.<br>
-                suite 700<br>
-                Minneapolis, MN 55401
-              </p>
+              <a
+                href="https://www.google.com.ua/maps/search/400+first+ave.+n.+suite+700+Minneapolis,+MN+55401/@44.9843286,-93.2826946,14z/data=!3m1!4b1?hl=ru"
+                class="contacts__link"
+              >
+                <p class="contacts__contact-block-text">
+                  400 first ave. n.<br>
+                  suite 700<br>
+                  Minneapolis, MN 55401
+                </p>
+              </a>
             </div>
           </div>
           <div class="contacts__form-block">
@@ -237,11 +268,13 @@
     </main>
     <footer class="footer">
       <div class="footer__logo">
-        <img
-          src="images/logo.png"
-          class="footer__logo-img"
-          alt="Logo image"
-        >
+        <a href="#home" class="footer__logo-link">
+          <img
+            src="images/logo.png"
+            class="footer__logo-img"
+            alt="Logo image"
+          >
+        </a>
       </div>
     </footer>
   </body>
