@@ -20,15 +20,16 @@
 }
 
 .logo {
-  @include size(48px, 82px);
   z-index: 2;
 
-  @media (min-width: 600px) {
-    @include size(80px, 136px);
-  }
+  &__img {
+    @include size(48px, 82px);
 
-  &__logo-img {
-    @include size(100%, 100%);
+    @media (min-width: 600px) {
+      & {
+        @include size(80px, 136px);
+      }
+    }
   }
 }
 
