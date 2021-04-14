@@ -1,3 +1,0 @@
-@function rubberPadding($_width) {
-  @return calc((100vw - #{$_width} + 240px) / 2);
-}
